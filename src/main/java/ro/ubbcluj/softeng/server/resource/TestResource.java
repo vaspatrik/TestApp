@@ -29,7 +29,7 @@ public class TestResource {
 	@Path("/string")
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getString() {
-		return "Test String2";
+		return "Test String new!!";
 	}
 	
 	@POST

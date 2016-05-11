@@ -16,7 +16,7 @@ import javax.ws.rs.core.Response.Status;
 import ro.ubbcluj.softeng.server.model.DemoModel;
 import ro.ubbcluj.softeng.server.service.DemoService;
 
-@Path("demo")
+@Path("/")
 public class TestResource {
 
 	@GET

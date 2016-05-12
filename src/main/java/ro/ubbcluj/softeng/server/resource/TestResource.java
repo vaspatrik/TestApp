@@ -49,16 +49,6 @@ public class TestResource {
 			return Response.status(Status.NOT_FOUND).build();
 	}
 	
-	@GET
-    @Path("/{number}")
-	public Response getItem(@PathParam("number") Integer number) {
-		DemoModel md = DemoService.getItem(number);
-		if (md != null)
-			return Response.ok(md).build();
-		else 
-			return Response.status(Status.NOT_FOUND).build();
-	}
-	
 	@PUT
     @Path("/{id}")
 	public Response updateData(@PathParam("id") Integer id, DemoModel dm) {

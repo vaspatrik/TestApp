@@ -12,20 +12,17 @@ public class DemoService {
 		if (data == null) {
 			data = new ArrayList<DemoModel>();
 			DemoModel dm1 = new DemoModel();
-			dm1.setNumber(233);
-			dm1.setSomeString("sfsdf");
+			dm1.setData("some data 1");
 
 			DemoModel dm2 = new DemoModel();
-			dm2.setNumber(4343);
-			dm2.setSomeString("kmmfk");
+		
+			dm2.setData("some data 2");
 
 			DemoModel dm3 = new DemoModel();
-			dm3.setNumber(544);
-			dm3.setSomeString("lfg3");
+			dm3.setData("some data 3");
 
 			DemoModel dm4 = new DemoModel();
-			dm4.setNumber(872);
-			dm4.setSomeString("xckb34");
+			dm4.setData("some data 4");
 
 			data.add(dm1);
 			data.add(dm2);
@@ -33,16 +30,6 @@ public class DemoService {
 			data.add(dm4);
 		}
 		return data;
-	}
-	
-	public static DemoModel getItem(Integer number) {
-		List<DemoModel> list = getDataList();
-		for (DemoModel demoModel : list) {
-			if (demoModel.getNumber().equals(number)) {
-				return demoModel;
-			}
-		}
-		return null;
 	}
 	
 	public static void save(DemoModel dm) {
